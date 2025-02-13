@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ovqatlar Menyusi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        .box {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            text-align: center;
+        }
+
+        /* MEDIA QUERIES */
+        @media (max-width: 1024px) {
+            .box {
+                grid-template-columns: repeat(3, 1fr); /* Planshet ekrani */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .box {
+                grid-template-columns: repeat(2, 1fr); /* Kichik ekranlar */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .box {
+                grid-template-columns: repeat(1, 1fr); /* Telefon ekrani */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">Ovqatlar</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Bosh sahifa</a></li>
+                <li><a href="#">Menyu</a></li>
+                <li><a href="#">Aloqa</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Ovqatlar Ro‘yxati -->
+    <div class="container" >
+        <div class="box" id="meals-container"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2025 Barcha huquqlar himoyalangan
+                <a class="grey-text text-lighten-4 right" href="#">Qo‘shimcha havolalar</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
