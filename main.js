@@ -13,7 +13,7 @@ fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=b')
           <span class="card-title" style="color:aqua;"></span>
         </div>
         <div class="card-content">
-          <p style="width:200px; height:60px;">${meal.strMeal}</p>
+          <p style="width:200px; height:20px;">${meal.strMeal.slice(0,20)}...</p>
         </div>
         <div class="card-action">
           <a href="${meal.strYoutube}" target="_blank">Watch reciept</a>
